@@ -1,0 +1,29 @@
+name = "io-utilities"
+version = "0.1.0"
+license = "MIT"
+author = "Arjen Markus"
+maintainer = "arjen.markus895@gmail.com"
+copyright = "2022 Arjen Markus"
+
+[[library]]
+source-dir="src"
+
+[[test]]
+name="test_cmdparse"
+source-dir="test"
+main="test_cmdparse.f90"
+
+[[test]]
+name="demo_cmdparse"
+source-dir="test"
+main="demo_cmdparse.f90"
+
+[[test]]
+name="test_keyvars"
+source-dir="test"
+main="test_keyvars.f90"
+
+[[test]]
+name="test_progressbar"
+source-dir="test"
+main="test_progressbar.f90"

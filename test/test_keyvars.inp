@@ -1,0 +1,6 @@
+# Example of an input file for keyvars
+# Lines starting with # are comments, anything after a # is regarded as comment as well
+#
+int = 2
+real = 1.234
+char = Would this work?

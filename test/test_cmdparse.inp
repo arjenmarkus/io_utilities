@@ -1,0 +1,10 @@
+# test.inp --
+#     Simple test input file
+
+report-file 'test.out'   # We need a file to report to ...
+repeat 10
+#repeat A 10
+allocate 10 10000
+#allocate
+
+#unknown-command
