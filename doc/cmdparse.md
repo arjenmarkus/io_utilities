@@ -1,3 +1,4 @@
+# cmdparse - module for parsing a minimalistic command language
 
 The `cmdparse` module provides a straightforward mechanism for reading commands from an input file
 or the keyboard:
