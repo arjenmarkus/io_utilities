@@ -1,9 +1,9 @@
 name = "io-utilities"
-version = "0.1.0"
+version = "0.2.0"
 license = "MIT"
 author = "Arjen Markus"
 maintainer = "arjen.markus895@gmail.com"
-copyright = "2022 Arjen Markus"
+copyright = "2024 Arjen Markus"
 
 [[library]]
 source-dir="src"
@@ -27,3 +27,8 @@ main="test_keyvars.f90"
 name="test_progressbar"
 source-dir="test"
 main="test_progressbar.f90"
+
+[[test]]
+name="test_positional"
+source-dir="test"
+main="test_positional.f90"
