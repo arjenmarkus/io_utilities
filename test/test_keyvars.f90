@@ -6,12 +6,12 @@ program test_keyvars
 
     implicit none
 
-    integer :: x
-    real    :: y
-    character(len=20) :: string
+    integer, target           :: x            ! These variables are required to have the
+    real, target              :: y            ! "target" attribute, as they will be
+    character(len=20), target :: string       ! pointed to.
 
-    logical                         :: exists
-    integer                         :: lun
+    logical                   :: exists
+    integer                   :: lun
 
     !
     ! Check if the input file exists, otherwise write an example

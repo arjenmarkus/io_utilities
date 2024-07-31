@@ -94,8 +94,12 @@ single and double precision real, logical or a character string of any length.
 
 Arguments:
  * `character(len=*) :: keyword` - The keyword by which the variable is to be found in the input.
- * `integer/real/double precision/character(len=*)/logical :: var` - The variable to be assigned a value from the input file.
+ * `integer/real/double precision/character(len=*)/logical, target :: var` - The variable to be assigned a value from the input file.
  * `character(len=*) :: description`` - The description of the variable, serves as documentation in the template.
+
+*Notes:*
+ * The actual argument to `var`should have the `target` attribute, as it will be pointed to.
+ * The compiler will not check the presence of the `target` attribute and the program may work if it is not present, but it would violate the standard.
 
 ```fortran
     arg = keyvar( section, keyword, var, description )
